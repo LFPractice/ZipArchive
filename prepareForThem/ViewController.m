@@ -7,7 +7,7 @@
 //
 
 #import "ViewController.h"
-
+#import "DrSkinManager.h"
 @interface ViewController ()
 
 @end
@@ -17,9 +17,8 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
-    NSFileManager *fileManager = [NSFileManager defaultManager];
-//    [fileManager removeItemAtPath:@"" error:nil];
     
+    [DrSkinManager loadDataForSkinSign];
     
 }
 

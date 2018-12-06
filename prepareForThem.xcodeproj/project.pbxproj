@@ -7,6 +7,13 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		53047D3321B8CCFA006B0C18 /* unzip.c in Sources */ = {isa = PBXBuildFile; fileRef = 53047D2921B8CCFA006B0C18 /* unzip.c */; };
+		53047D3421B8CCFA006B0C18 /* zip.c in Sources */ = {isa = PBXBuildFile; fileRef = 53047D2A21B8CCFA006B0C18 /* zip.c */; };
+		53047D3521B8CCFA006B0C18 /* ioapi.c in Sources */ = {isa = PBXBuildFile; fileRef = 53047D2B21B8CCFA006B0C18 /* ioapi.c */; };
+		53047D3621B8CCFA006B0C18 /* mztools.c in Sources */ = {isa = PBXBuildFile; fileRef = 53047D2C21B8CCFA006B0C18 /* mztools.c */; };
+		53047D3721B8CCFA006B0C18 /* ZipArchive.mm in Sources */ = {isa = PBXBuildFile; fileRef = 53047D3221B8CCFA006B0C18 /* ZipArchive.mm */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		53047D3A21B8CF2A006B0C18 /* libz.1.2.5.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 53047D3921B8CF2A006B0C18 /* libz.1.2.5.tbd */; };
+		53047D3C21B9156D006B0C18 /* zip.zip in Resources */ = {isa = PBXBuildFile; fileRef = 53047D3B21B9156D006B0C18 /* zip.zip */; };
 		53133D1921B7CBAE00E30B3A /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 53133D1821B7CBAE00E30B3A /* AppDelegate.m */; };
 		53133D1C21B7CBAE00E30B3A /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 53133D1B21B7CBAE00E30B3A /* ViewController.m */; };
 		53133D1F21B7CBAE00E30B3A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 53133D1D21B7CBAE00E30B3A /* Main.storyboard */; };
@@ -16,6 +23,7 @@
 		53133D3121B7CBAF00E30B3A /* prepareForThemTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 53133D3021B7CBAF00E30B3A /* prepareForThemTests.m */; };
 		53133D3C21B7CBAF00E30B3A /* prepareForThemUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 53133D3B21B7CBAF00E30B3A /* prepareForThemUITests.m */; };
 		53133D4B21B7CE1300E30B3A /* DrSkinManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 53133D4A21B7CE1300E30B3A /* DrSkinManager.m */; };
+		5360A31E21B92ADC0083AAB1 /* SkinImages.plist in Resources */ = {isa = PBXBuildFile; fileRef = 5360A31D21B92ADC0083AAB1 /* SkinImages.plist */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,6 +44,19 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		53047D2721B8CCFA006B0C18 /* ZipArchive.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZipArchive.h; sourceTree = "<group>"; };
+		53047D2921B8CCFA006B0C18 /* unzip.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = unzip.c; sourceTree = "<group>"; };
+		53047D2A21B8CCFA006B0C18 /* zip.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = zip.c; sourceTree = "<group>"; };
+		53047D2B21B8CCFA006B0C18 /* ioapi.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = ioapi.c; sourceTree = "<group>"; };
+		53047D2C21B8CCFA006B0C18 /* mztools.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = mztools.c; sourceTree = "<group>"; };
+		53047D2D21B8CCFA006B0C18 /* crypt.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = crypt.h; sourceTree = "<group>"; };
+		53047D2E21B8CCFA006B0C18 /* zip.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = zip.h; sourceTree = "<group>"; };
+		53047D2F21B8CCFA006B0C18 /* unzip.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = unzip.h; sourceTree = "<group>"; };
+		53047D3021B8CCFA006B0C18 /* mztools.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = mztools.h; sourceTree = "<group>"; };
+		53047D3121B8CCFA006B0C18 /* ioapi.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ioapi.h; sourceTree = "<group>"; };
+		53047D3221B8CCFA006B0C18 /* ZipArchive.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = ZipArchive.mm; sourceTree = "<group>"; };
+		53047D3921B8CF2A006B0C18 /* libz.1.2.5.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libz.1.2.5.tbd; path = usr/lib/libz.1.2.5.tbd; sourceTree = SDKROOT; };
+		53047D3B21B9156D006B0C18 /* zip.zip */ = {isa = PBXFileReference; lastKnownFileType = archive.zip; path = zip.zip; sourceTree = "<group>"; };
 		53133D1421B7CBAD00E30B3A /* prepareForThem.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = prepareForThem.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		53133D1721B7CBAE00E30B3A /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		53133D1821B7CBAE00E30B3A /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -54,6 +75,7 @@
 		53133D3D21B7CBAF00E30B3A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		53133D4921B7CE1300E30B3A /* DrSkinManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DrSkinManager.h; sourceTree = "<group>"; };
 		53133D4A21B7CE1300E30B3A /* DrSkinManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DrSkinManager.m; sourceTree = "<group>"; };
+		5360A31D21B92ADC0083AAB1 /* SkinImages.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = SkinImages.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -61,6 +83,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				53047D3A21B8CF2A006B0C18 /* libz.1.2.5.tbd in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -81,6 +104,40 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		53047D2621B8CCFA006B0C18 /* ZipArchive */ = {
+			isa = PBXGroup;
+			children = (
+				53047D2821B8CCFA006B0C18 /* minizip */,
+				53047D2721B8CCFA006B0C18 /* ZipArchive.h */,
+				53047D3221B8CCFA006B0C18 /* ZipArchive.mm */,
+			);
+			path = ZipArchive;
+			sourceTree = "<group>";
+		};
+		53047D2821B8CCFA006B0C18 /* minizip */ = {
+			isa = PBXGroup;
+			children = (
+				53047D2921B8CCFA006B0C18 /* unzip.c */,
+				53047D2A21B8CCFA006B0C18 /* zip.c */,
+				53047D2B21B8CCFA006B0C18 /* ioapi.c */,
+				53047D2C21B8CCFA006B0C18 /* mztools.c */,
+				53047D2D21B8CCFA006B0C18 /* crypt.h */,
+				53047D2E21B8CCFA006B0C18 /* zip.h */,
+				53047D2F21B8CCFA006B0C18 /* unzip.h */,
+				53047D3021B8CCFA006B0C18 /* mztools.h */,
+				53047D3121B8CCFA006B0C18 /* ioapi.h */,
+			);
+			path = minizip;
+			sourceTree = "<group>";
+		};
+		53047D3821B8CF29006B0C18 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				53047D3921B8CF2A006B0C18 /* libz.1.2.5.tbd */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		53133D0B21B7CBAD00E30B3A = {
 			isa = PBXGroup;
 			children = (
@@ -88,6 +145,7 @@
 				53133D2F21B7CBAF00E30B3A /* prepareForThemTests */,
 				53133D3A21B7CBAF00E30B3A /* prepareForThemUITests */,
 				53133D1521B7CBAD00E30B3A /* Products */,
+				53047D3821B8CF29006B0C18 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -104,12 +162,15 @@
 		53133D1621B7CBAE00E30B3A /* prepareForThem */ = {
 			isa = PBXGroup;
 			children = (
+				53047D3B21B9156D006B0C18 /* zip.zip */,
 				53133D1721B7CBAE00E30B3A /* AppDelegate.h */,
 				53133D1821B7CBAE00E30B3A /* AppDelegate.m */,
 				53133D1A21B7CBAE00E30B3A /* ViewController.h */,
 				53133D1B21B7CBAE00E30B3A /* ViewController.m */,
 				53133D4921B7CE1300E30B3A /* DrSkinManager.h */,
 				53133D4A21B7CE1300E30B3A /* DrSkinManager.m */,
+				5360A31D21B92ADC0083AAB1 /* SkinImages.plist */,
+				53047D2621B8CCFA006B0C18 /* ZipArchive */,
 				53133D1D21B7CBAE00E30B3A /* Main.storyboard */,
 				53133D2021B7CBAF00E30B3A /* Assets.xcassets */,
 				53133D2221B7CBAF00E30B3A /* LaunchScreen.storyboard */,
@@ -243,6 +304,8 @@
 				53133D2421B7CBAF00E30B3A /* LaunchScreen.storyboard in Resources */,
 				53133D2121B7CBAF00E30B3A /* Assets.xcassets in Resources */,
 				53133D1F21B7CBAE00E30B3A /* Main.storyboard in Resources */,
+				5360A31E21B92ADC0083AAB1 /* SkinImages.plist in Resources */,
+				53047D3C21B9156D006B0C18 /* zip.zip in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -268,9 +331,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				53133D4B21B7CE1300E30B3A /* DrSkinManager.m in Sources */,
+				53047D3321B8CCFA006B0C18 /* unzip.c in Sources */,
+				53047D3621B8CCFA006B0C18 /* mztools.c in Sources */,
 				53133D1C21B7CBAE00E30B3A /* ViewController.m in Sources */,
+				53047D3421B8CCFA006B0C18 /* zip.c in Sources */,
 				53133D2721B7CBAF00E30B3A /* main.m in Sources */,
 				53133D1921B7CBAE00E30B3A /* AppDelegate.m in Sources */,
+				53047D3721B8CCFA006B0C18 /* ZipArchive.mm in Sources */,
+				53047D3521B8CCFA006B0C18 /* ioapi.c in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

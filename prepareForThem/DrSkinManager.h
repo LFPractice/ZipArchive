@@ -7,11 +7,11 @@
 //
 
 #import <Foundation/Foundation.h>
-
+#import "ZipArchive.h"
 NS_ASSUME_NONNULL_BEGIN
 
 #define Name_Resource @"HolidaySkin"
-#define DocumentPath [[NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES)firstObject]stringByAppendingPathComponent:Name_Resource];
+#define DocumentPath [[NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES)firstObject]stringByAppendingPathComponent:Name_Resource]
 @interface DrSkinManager : NSObject
 + (NSString *)localSkinSign;
 + (void)setLocalSkinKey:(NSString *)skinSign;
